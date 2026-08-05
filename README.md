@@ -2,6 +2,8 @@
 
 **English** · [한국어](README.ko.md)
 
+![GainMesh — one system audio stream, precisely shaped and routed to the speakers you choose.](docs/assets/gainmesh-hero.png)
+
 **macOS multi-output audio routing with parametric EQ.**
 
 Route one system-audio stream to several speakers at once, with per-device volume, balance, and delay — plus up to 12 parametric EQ bands and 27 real-curve presets, in a native menu-bar app.
