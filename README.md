@@ -6,7 +6,7 @@
 
 Route one system-audio stream to several speakers at once, with per-device volume, balance, and delay — plus up to 12 parametric EQ bands and 27 real-curve presets, in a native menu-bar app.
 
-[![Download](https://img.shields.io/badge/download-DMG%20v1.1.0-0A84FF?style=flat-square)](../../releases/latest)
+[![Download](https://img.shields.io/badge/download-DMG%20v1.1.1-0A84FF?style=flat-square)](../../releases/latest)
 [![Platform: macOS 14.2+](https://img.shields.io/badge/platform-macOS%2014.2%2B-1D1D1F?style=flat-square)](../../releases/latest)
 [![Apple silicon](https://img.shields.io/badge/chip-Apple%20silicon-635BFF?style=flat-square)](../../releases/latest)
 [![License: Personal Use](https://img.shields.io/badge/license-Personal%20Use-E84D3D?style=flat-square)](LICENSE)
@@ -53,14 +53,17 @@ GainMesh lives in the menu bar — it has no Dock icon and no main window.
 
 macOS shows the permission prompt only once. If you dismissed it, enable GainMesh under **System Settings → Privacy & Security → System Audio Recording** and relaunch the app.
 
+**GainMesh starts automatically when you log in.** The installer arms this, so the restart it asks for comes back up with GainMesh already running. Turn it off in Settings if you would rather start it yourself — but note that while the `GainMesh` device is your system output, audio only plays when the app is running.
+
+Your very first launch starts on the speaker your Mac is already using, so sound keeps working before you choose anything.
+
 ## Uninstall
 
-```sh
-sudo rm -rf "/Library/Audio/Plug-Ins/HAL/GainMeshDriver.driver"
-rm -rf "/Applications/GainMesh.app"
-```
+Open the same `GainMesh.dmg` and run **`Uninstall GainMesh.command`**. It quits the app, removes the login item, deletes both the app and the HAL driver, and clears your settings. You approve one administrator prompt.
 
 Restart your Mac afterwards so Core Audio releases the driver and your original output selection returns.
+
+Dragging the app to the Trash is not enough — the driver lives in `/Library/Audio/Plug-Ins/HAL` and needs administrator rights to remove.
 
 ## Troubleshooting
 
