@@ -6,7 +6,7 @@
 
 Route one system-audio stream to several speakers at once, with per-device volume, balance, and delay — plus up to 12 parametric EQ bands and 27 real-curve presets, in a native menu-bar app.
 
-[![Download](https://img.shields.io/badge/download-DMG%20v1.1.6-0A84FF?style=flat-square)](../../releases/latest)
+[![Download](https://img.shields.io/badge/download-DMG%20v1.1.7-0A84FF?style=flat-square)](../../releases/latest)
 [![Platform: macOS 14.2+](https://img.shields.io/badge/platform-macOS%2014.2%2B-1D1D1F?style=flat-square)](../../releases/latest)
 [![Apple silicon](https://img.shields.io/badge/chip-Apple%20silicon-635BFF?style=flat-square)](../../releases/latest)
 [![License: Personal Use](https://img.shields.io/badge/license-Personal%20Use-E84D3D?style=flat-square)](LICENSE)
