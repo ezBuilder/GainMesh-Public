@@ -6,7 +6,7 @@
 
 Route one system-audio stream to several speakers at once, with per-device volume, balance, and delay — plus up to 12 parametric EQ bands and 27 real-curve presets, in a native menu-bar app.
 
-[![Download](https://img.shields.io/badge/download-DMG%20v1.1.7-0A84FF?style=flat-square)](../../releases/latest)
+[![Download](https://img.shields.io/badge/download-DMG%20v1.1.10-0A84FF?style=flat-square)](../../releases/latest)
 [![Platform: macOS 14.2+](https://img.shields.io/badge/platform-macOS%2014.2%2B-1D1D1F?style=flat-square)](../../releases/latest)
 [![Apple silicon](https://img.shields.io/badge/chip-Apple%20silicon-635BFF?style=flat-square)](../../releases/latest)
 [![License: Personal Use](https://img.shields.io/badge/license-Personal%20Use-E84D3D?style=flat-square)](LICENSE)
@@ -59,13 +59,13 @@ Your very first launch starts on the speaker your Mac is already using, so sound
 
 ## Uninstall
 
-Open the same `GainMesh.dmg` and run **`Uninstall GainMesh.command`**. It quits the app, removes the login item, deletes both the app and the HAL driver, and clears your settings. You approve one administrator prompt.
+Open the GainMesh menu-bar icon, choose the **…** menu, then **Uninstall GainMesh**. It quits the app, removes the login item, deletes both the app and the HAL driver, and clears your settings. You approve one administrator prompt.
 
 Restart your Mac afterwards so Core Audio releases the driver and your original output selection returns.
 
 Dragging the app to the Trash is not enough — the driver lives in `/Library/Audio/Plug-Ins/HAL` and needs administrator rights to remove.
 
-The disk-image entry is a link to the uninstaller inside the installed app, so it works once GainMesh is installed. You can also run it directly from `GainMesh.app/Contents/Resources/uninstall.command`.
+The uninstaller lives in the app rather than the disk image because macOS blocks a downloaded script on double-click, and a shell script cannot be notarized to avoid that.
 
 ## Troubleshooting
 
