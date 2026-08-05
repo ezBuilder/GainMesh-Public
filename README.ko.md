@@ -6,7 +6,7 @@
 
 시스템 오디오 한 줄기를 여러 스피커로 동시에 보내고, 기기별 볼륨·밸런스·지연을 따로 맞춥니다. 최대 12밴드 파라메트릭 EQ와 27개 실측 커브 프리셋을 네이티브 메뉴 막대 앱에서 제공합니다.
 
-[![Download](https://img.shields.io/badge/download-DMG%20v1.1.1-0A84FF?style=flat-square)](../../releases/latest)
+[![Download](https://img.shields.io/badge/download-DMG%20v1.1.2-0A84FF?style=flat-square)](../../releases/latest)
 [![Platform: macOS 14.2+](https://img.shields.io/badge/platform-macOS%2014.2%2B-1D1D1F?style=flat-square)](../../releases/latest)
 [![Apple silicon](https://img.shields.io/badge/chip-Apple%20silicon-635BFF?style=flat-square)](../../releases/latest)
 [![License: Personal Use](https://img.shields.io/badge/license-Personal%20Use-E84D3D?style=flat-square)](LICENSE)
@@ -64,6 +64,8 @@ GainMesh는 메뉴 막대에서 동작합니다. Dock 아이콘과 별도 메인
 제거 후 Mac을 재시작해야 Core Audio가 드라이버를 놓고 원래 출력 선택으로 돌아갑니다.
 
 앱을 휴지통에 넣는 것만으로는 부족합니다. 드라이버는 `/Library/Audio/Plug-Ins/HAL`에 있고 삭제에 관리자 권한이 필요합니다.
+
+디스크 이미지의 항목은 설치된 앱 안의 제거 프로그램으로 향하는 링크라, GainMesh가 설치돼 있어야 동작합니다. `GainMesh.app/Contents/Resources/uninstall.command`를 직접 실행해도 됩니다.
 
 ## 문제 해결
 
