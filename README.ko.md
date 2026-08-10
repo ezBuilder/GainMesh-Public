@@ -4,14 +4,33 @@
 
 ![GainMesh — 하나의 시스템 오디오를, 원하는 스피커로 정밀하게 조정해 라우팅합니다.](docs/assets/gainmesh-hero.png)
 
-**macOS 다중 출력 오디오 라우팅과 파라메트릭 EQ.**
+**맥의 모든 소리를, 원하는 스피커로 완벽하게 엮다.**
 
-시스템 오디오 한 줄기를 여러 스피커로 동시에 보내고, 기기별 볼륨·밸런스·지연을 따로 맞춥니다. 최대 12밴드 파라메트릭 EQ와 27개 실측 커브 프리셋을 네이티브 메뉴 막대 앱에서 제공합니다.
+GainMesh는 시스템 오디오 한 줄기를 여러 스피커로 동시에 보내고, 기기별 볼륨·밸런스·지연을 따로 맞춥니다. 12밴드 파라메트릭 EQ, 27개 실측 커브 프리셋, 시스템 오디오 화면 녹화, 라이브 메뉴 막대 비주얼라이저까지 하나의 네이티브 앱에 담았습니다.
 
-[![Download](https://img.shields.io/badge/download-DMG%20v1.1.10-0A84FF?style=flat-square)](../../releases/latest)
+[![Download](https://img.shields.io/badge/download-DMG%20v1.3.16-0A84FF?style=flat-square)](../../releases/latest)
 [![Platform: macOS 14.2+](https://img.shields.io/badge/platform-macOS%2014.2%2B-1D1D1F?style=flat-square)](../../releases/latest)
 [![Apple silicon](https://img.shields.io/badge/chip-Apple%20silicon-635BFF?style=flat-square)](../../releases/latest)
 [![License: Personal Use](https://img.shields.io/badge/license-Personal%20Use-E84D3D?style=flat-square)](LICENSE)
+
+## 1.3.16 주요 개선점
+
+- **화면 녹화에 Mac 소리까지 저장됩니다.** GainMesh가 시스템 오디오 녹음 경로를 직접 제공하므로 BlackHole이 필요 없습니다.
+- **33가지 오디오 비주얼라이저 스타일.** 메뉴 막대와 MacBook 노치에서 음악을 보고, 메인 설정을 열지 않고 바로 스타일을 바꿀 수 있습니다.
+- **곡 변경을 빠르게 따라갑니다.** 음악이 바뀌면 앨범 이미지·곡명·비주얼 움직임이 바로 갱신됩니다.
+- **노치 화면을 다듬었습니다.** 접힌 비주얼도 펼친 화면의 밀도를 유지하고, 핀 고정과 그림자·아이콘 동작을 안정화했습니다.
+- **노치 없는 Mac은 진짜 메뉴 막대를 씁니다.** Mac Studio와 외장 모니터에서는 가짜 노치를 그리지 않고 비주얼만 자연스럽게 표시합니다.
+- **오디오 장치 이름을 정리했습니다.** 입력과 출력 모두 GainMesh로 표시되며, 의미 없는 Data Source Item 항목을 제거했습니다.
+
+전체 사용자 변경 내역은 [CHANGELOG.md](CHANGELOG.md)에서 확인할 수 있습니다.
+
+## GainMesh가 하는 일
+
+- Mac의 같은 소리를 여러 실제 출력 기기에서 동시에 재생합니다.
+- 출력 기기마다 볼륨·밸런스·지연을 따로 조정합니다.
+- 최대 12밴드 파라메트릭 EQ와 27개 프리셋으로 소리를 다듬습니다.
+- 별도 루프백 앱 없이 macOS 화면 녹화에 시스템 오디오를 담습니다.
+- 메뉴 막대에서 앨범 이미지·재생 제어·라이브 비주얼을 보여줍니다.
 
 ## 요구 사항
 
@@ -93,4 +112,4 @@ Copyright © ezBuilder
 
 ---
 
-이 저장소는 서명·공증된 배포본만 제공합니다. [소스 코드](https://github.com/ezBuilder/GainMesh)
+이 저장소에는 공개 문서와 서명·공증된 설치 파일만 있습니다. 제품 소스 코드는 배포하지 않습니다.

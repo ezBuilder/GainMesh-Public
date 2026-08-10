@@ -4,14 +4,33 @@
 
 ![GainMesh — one system audio stream, precisely shaped and routed to the speakers you choose.](docs/assets/gainmesh-hero.png)
 
-**macOS multi-output audio routing with parametric EQ.**
+**Shape every sound on your Mac, then send it exactly where you want.**
 
-Route one system-audio stream to several speakers at once, with per-device volume, balance, and delay — plus up to 12 parametric EQ bands and 27 real-curve presets, in a native menu-bar app.
+GainMesh routes one system-audio stream to several speakers at once, with per-device volume, balance, and delay. It also brings a 12-band parametric EQ, 27 real-curve presets, system-audio screen recording, and a live menu-bar visualizer into one native app.
 
-[![Download](https://img.shields.io/badge/download-DMG%20v1.1.10-0A84FF?style=flat-square)](../../releases/latest)
+[![Download](https://img.shields.io/badge/download-DMG%20v1.3.16-0A84FF?style=flat-square)](../../releases/latest)
 [![Platform: macOS 14.2+](https://img.shields.io/badge/platform-macOS%2014.2%2B-1D1D1F?style=flat-square)](../../releases/latest)
 [![Apple silicon](https://img.shields.io/badge/chip-Apple%20silicon-635BFF?style=flat-square)](../../releases/latest)
 [![License: Personal Use](https://img.shields.io/badge/license-Personal%20Use-E84D3D?style=flat-square)](LICENSE)
+
+## What's new in 1.3.16
+
+- **Screen recordings now keep the Mac's sound.** GainMesh supplies its own system-audio recording path, so BlackHole is no longer required.
+- **33 audio visualizer styles.** See the music in the menu bar or around a MacBook notch, and switch styles without digging through the main settings panel.
+- **Now Playing follows the song.** Artwork, title, and visual motion refresh promptly when the track changes.
+- **A cleaner notch experience.** Compact visuals retain the detail of the expanded player; pinning is stable; controls use menu-bar-sized icons.
+- **A real menu-bar layout on notchless Macs.** Mac Studio and external displays show the visualizer without drawing a fake notch.
+- **One named audio device.** The input and output appear as GainMesh, without placeholder data-source entries.
+
+See the full user-facing history in [CHANGELOG.md](CHANGELOG.md).
+
+## What GainMesh does
+
+- Plays the same Mac audio through multiple physical outputs.
+- Tunes volume, balance, and delay independently for each output.
+- Shapes sound with up to 12 parametric EQ bands and 27 presets.
+- Records system audio in macOS screen recordings without a separate loopback app.
+- Shows album art, playback controls, and a live visualizer in the menu bar.
 
 ## Requirements
 
@@ -93,4 +112,4 @@ Copyright © ezBuilder
 
 ---
 
-This repository distributes the signed, notarized build only. [Source code](https://github.com/ezBuilder/GainMesh)
+This repository contains documentation and signed, notarized installers only. Product source code is not distributed here.
