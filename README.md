@@ -8,19 +8,19 @@
 
 GainMesh routes one system-audio stream to several speakers at once, with per-device volume, balance, and delay. It also brings a 12-band parametric EQ, 27 real-curve presets, system-audio screen recording, and a live menu-bar visualizer into one native app.
 
-[![Download](https://img.shields.io/badge/download-DMG%20v1.3.16-0A84FF?style=flat-square)](../../releases/latest)
+[![Download](https://img.shields.io/badge/download-DMG%20v1.3.17-0A84FF?style=flat-square)](../../releases/latest)
 [![Platform: macOS 14.2+](https://img.shields.io/badge/platform-macOS%2014.2%2B-1D1D1F?style=flat-square)](../../releases/latest)
 [![Apple silicon](https://img.shields.io/badge/chip-Apple%20silicon-635BFF?style=flat-square)](../../releases/latest)
 [![License: Personal Use](https://img.shields.io/badge/license-Personal%20Use-E84D3D?style=flat-square)](LICENSE)
 
-## What's new in 1.3.16
+## What's new in 1.3.17
 
-- **Screen recordings now keep the Mac's sound.** GainMesh supplies its own system-audio recording path, so BlackHole is no longer required.
-- **33 audio visualizer styles.** See the music in the menu bar or around a MacBook notch, and switch styles without digging through the main settings panel.
-- **Now Playing follows the song.** Artwork, title, and visual motion refresh promptly when the track changes.
-- **A cleaner notch experience.** Compact visuals retain the detail of the expanded player; pinning is stable; controls use menu-bar-sized icons.
-- **A real menu-bar layout on notchless Macs.** Mac Studio and external displays show the visualizer without drawing a fake notch.
-- **One named audio device.** The input and output appear as GainMesh, without placeholder data-source entries.
+- **Sound comes back on its own.** If macOS restarts its audio system (common after an update), GainMesh now reconnects automatically instead of leaving your speakers silent until relaunch.
+- **Stopping never strands your audio.** Quitting or stopping always hands the Mac back to a real speaker, never to the silent virtual device.
+- **Much lighter on CPU.** The equalizer runs once instead of once per speaker (about 3× cheaper with four outputs), now-playing updates only when something changes, and the notch visualizer rests during silence.
+- **Status at a glance.** The menu-bar icon shows playing, stopped, reconnecting, or needs-attention; the panel shows "Reconnecting audio" while recovering.
+- **Cleaner notch.** A solid black background keeps the visualizer readable on any wallpaper; click the album art to open the playing app (or Apple Music).
+- **Easier updates.** New versions are announced once, and "Download" fetches the notarized installer, verifies its signature, and opens it for you.
 
 See the full user-facing history in [CHANGELOG.md](CHANGELOG.md).
 

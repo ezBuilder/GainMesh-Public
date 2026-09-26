@@ -8,19 +8,19 @@
 
 GainMesh는 시스템 오디오 한 줄기를 여러 스피커로 동시에 보내고, 기기별 볼륨·밸런스·지연을 따로 맞춥니다. 12밴드 파라메트릭 EQ, 27개 실측 커브 프리셋, 시스템 오디오 화면 녹화, 라이브 메뉴 막대 비주얼라이저까지 하나의 네이티브 앱에 담았습니다.
 
-[![Download](https://img.shields.io/badge/download-DMG%20v1.3.16-0A84FF?style=flat-square)](../../releases/latest)
+[![Download](https://img.shields.io/badge/download-DMG%20v1.3.17-0A84FF?style=flat-square)](../../releases/latest)
 [![Platform: macOS 14.2+](https://img.shields.io/badge/platform-macOS%2014.2%2B-1D1D1F?style=flat-square)](../../releases/latest)
 [![Apple silicon](https://img.shields.io/badge/chip-Apple%20silicon-635BFF?style=flat-square)](../../releases/latest)
 [![License: Personal Use](https://img.shields.io/badge/license-Personal%20Use-E84D3D?style=flat-square)](LICENSE)
 
-## 1.3.16 주요 개선점
+## 1.3.17 주요 개선점
 
-- **화면 녹화에 Mac 소리까지 저장됩니다.** GainMesh가 시스템 오디오 녹음 경로를 직접 제공하므로 BlackHole이 필요 없습니다.
-- **33가지 오디오 비주얼라이저 스타일.** 메뉴 막대와 MacBook 노치에서 음악을 보고, 메인 설정을 열지 않고 바로 스타일을 바꿀 수 있습니다.
-- **곡 변경을 빠르게 따라갑니다.** 음악이 바뀌면 앨범 이미지·곡명·비주얼 움직임이 바로 갱신됩니다.
-- **노치 화면을 다듬었습니다.** 접힌 비주얼도 펼친 화면의 밀도를 유지하고, 핀 고정과 그림자·아이콘 동작을 안정화했습니다.
-- **노치 없는 Mac은 진짜 메뉴 막대를 씁니다.** Mac Studio와 외장 모니터에서는 가짜 노치를 그리지 않고 비주얼만 자연스럽게 표시합니다.
-- **오디오 장치 이름을 정리했습니다.** 입력과 출력 모두 GainMesh로 표시되며, 의미 없는 Data Source Item 항목을 제거했습니다.
+- **소리가 스스로 돌아옵니다.** macOS가 오디오 시스템을 재시작해도(업데이트 후 자주 발생) 다시 실행할 필요 없이 자동으로 다시 연결합니다.
+- **정지해도 소리가 갇히지 않습니다.** 종료·정지하면 항상 실제 스피커로 출력을 되돌립니다.
+- **CPU 사용량이 크게 줄었습니다.** EQ를 스피커마다가 아니라 한 번만 계산하고(출력 4개 기준 약 3배 절감), 곡 정보는 바뀔 때만 갱신하며, 무음일 때 노치 비주얼은 쉽니다.
+- **상태가 한눈에 보입니다.** 메뉴 막대 아이콘이 재생·정지·재연결 중·확인 필요를 구분하고, 복구 중에는 패널에 "오디오 다시 연결 중"이 표시됩니다.
+- **더 깔끔한 노치.** 완전한 검은 배경으로 어떤 배경화면에서도 비주얼이 잘 보이고, 앨범 아트를 누르면 재생 중인 앱(없으면 Apple Music)이 열립니다.
+- **쉬워진 업데이트.** 새 버전을 한 번 알려 주고, "다운로드"를 누르면 공증된 설치 파일을 받아 서명을 확인한 뒤 바로 설치 프로그램을 엽니다.
 
 전체 사용자 변경 내역은 [CHANGELOG.md](CHANGELOG.md)에서 확인할 수 있습니다.
 
